@@ -3,7 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using System;
 
-namespace NP.PDD.Sample
+namespace NP.PDD.MainApp
 {
     internal class Program
     {

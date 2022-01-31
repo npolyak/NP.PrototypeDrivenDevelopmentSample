@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 
-namespace NP.PDD.Sample
+namespace NP.PDD.MainApp
 {
     public class App : Application
     {

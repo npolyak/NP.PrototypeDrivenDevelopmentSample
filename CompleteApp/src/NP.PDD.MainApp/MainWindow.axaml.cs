@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace NP.PDD.Sample
+namespace NP.PDD.MainApp
 {
     public partial class MainWindow : Window
     {
