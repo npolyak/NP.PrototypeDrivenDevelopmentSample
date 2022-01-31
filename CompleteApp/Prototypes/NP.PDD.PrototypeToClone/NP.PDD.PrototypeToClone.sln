@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NP.PDD.PrototypeToClone", "NP.PDD.PrototypeToClone.csproj", "{447E5CBC-CB04-4D69-84A8-3ECAC24547F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{EE84A414-2426-4607-A193-1F839A6A6F41}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NP.Visuals", "..\..\Core\NP.Visuals\NP.Visuals.csproj", "{63FFA5DB-B0AD-46DD-8F7A-D96622014943}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{447E5CBC-CB04-4D69-84A8-3ECAC24547F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447E5CBC-CB04-4D69-84A8-3ECAC24547F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447E5CBC-CB04-4D69-84A8-3ECAC24547F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447E5CBC-CB04-4D69-84A8-3ECAC24547F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63FFA5DB-B0AD-46DD-8F7A-D96622014943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63FFA5DB-B0AD-46DD-8F7A-D96622014943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63FFA5DB-B0AD-46DD-8F7A-D96622014943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63FFA5DB-B0AD-46DD-8F7A-D96622014943}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{63FFA5DB-B0AD-46DD-8F7A-D96622014943} = {EE84A414-2426-4607-A193-1F839A6A6F41}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D858EC53-D89F-4FDF-B4D4-C1FC9E16DE10}
+	EndGlobalSection
+EndGlobal
