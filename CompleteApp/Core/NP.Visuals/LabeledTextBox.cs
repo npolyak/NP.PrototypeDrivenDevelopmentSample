@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using Avalonia.Controls.Primitives;
 
-namespace NP.PDD.LabeledTextBoxPrototype
+namespace NP.Visuals
 {
     public class LabeledTextBox : TemplatedControl
     {

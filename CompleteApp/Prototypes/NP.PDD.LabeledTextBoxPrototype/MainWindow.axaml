@@ -1,19 +1,20 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:visuals="clr-namespace:NP.Visuals;assembly=NP.Visuals"
         xmlns:local="clr-namespace:NP.PDD.LabeledTextBoxPrototype"
         Width="600"
         Height="400"
         x:Class="NP.PDD.LabeledTextBoxPrototype.MainWindow"
         Title="NP.PDD.LabeledTextBoxPrototype">
-    <local:LabeledTextBox Label="The Text"
+    <visuals:LabeledTextBox Label="The Text"
                           Text="Hello World!"
                           HorizontalAlignment="Center"
                           VerticalAlignment="Center">
-        <local:LabeledTextBox.Template>
+		<visuals:LabeledTextBox.Template>
             <!-- TargetType allows to use TemplateBinding to bind to the 
                  Styled Properties defined on the control of the parent class
                  -->
-            <ControlTemplate TargetType="local:LabeledTextBox">
+            <ControlTemplate TargetType="visuals:LabeledTextBox">
                 <!-- this StackPanel arranges the items contained within it horizontally -->
                 <StackPanel Orientation="Horizontal">
                     <!-- TextBlock whose text is bound to the Label Styled Property
@@ -32,6 +33,6 @@
                              Width="200"/>
                 </StackPanel>
             </ControlTemplate>
-        </local:LabeledTextBox.Template>
-    </local:LabeledTextBox>
+        </visuals:LabeledTextBox.Template>
+    </visuals:LabeledTextBox>
 </Window>
