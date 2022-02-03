@@ -1,38 +1,17 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		xmlns:visuals="clr-namespace:NP.Visuals;assembly=NP.Visuals"
+        xmlns:visuals="clr-namespace:NP.Visuals;assembly=NP.Visuals"
         xmlns:local="clr-namespace:NP.PDD.LabeledTextBoxPrototype"
         Width="600"
         Height="400"
         x:Class="NP.PDD.LabeledTextBoxPrototype.MainWindow"
         Title="NP.PDD.LabeledTextBoxPrototype">
+    <Window.Styles>
+        <StyleInclude Source="avares://NP.Visuals/Styles/LabeledTextBoxStyles.axaml"/>
+    </Window.Styles>
     <visuals:LabeledTextBox Label="The Text"
-                          Text="Hello World!"
-                          HorizontalAlignment="Center"
-                          VerticalAlignment="Center">
-		<visuals:LabeledTextBox.Template>
-            <!-- TargetType allows to use TemplateBinding to bind to the 
-                 Styled Properties defined on the control of the parent class
-                 -->
-            <ControlTemplate TargetType="visuals:LabeledTextBox">
-                <!-- this StackPanel arranges the items contained within it horizontally -->
-                <StackPanel Orientation="Horizontal">
-                    <!-- TextBlock whose text is bound to the Label Styled Property
-                         of its template parent control -->
-                    <TextBlock Text="{TemplateBinding Label}"
-                               VerticalAlignment="Center"/>
-					
-                    <!-- TextBlock displaying the colon followed by a space - ": "-->
-                    <TextBlock Text=": "
-                               VerticalAlignment="Center"/>
-
-                    <!-- TextBox whose Text is two-way bound to the Text Styled Property
-                         of its template parent control -->
-                    <TextBox Text="{TemplateBinding Text, Mode=TwoWay}"
-                             VerticalAlignment="Center"
-                             Width="200"/>
-                </StackPanel>
-            </ControlTemplate>
-        </visuals:LabeledTextBox.Template>
-    </visuals:LabeledTextBox>
+                            Text="Hello World!"
+                            Classes="HorizontalLabeledTextBox"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
 </Window>

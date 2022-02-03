@@ -1,0 +1,35 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:visuals="clr-namespace:NP.Visuals">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+        </Border>
+    </Design.PreviewWith>
+
+	<Style Selector="visuals|LabeledTextBox.HorizontalLabeledTextBox">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="visuals:LabeledTextBox">
+					<!-- this StackPanel arranges the items contained within it horizontally -->
+					<StackPanel Orientation="Horizontal">
+						<!-- TextBlock whose text is bound to the Label Styled Property
+                         of its template parent control -->
+						<TextBlock Text="{Binding Label, RelativeSource={RelativeSource TemplatedParent}}"
+								   VerticalAlignment="Center"/>
+
+						<!-- TextBlock displaying the colon followed by a space - ": "-->
+						<TextBlock Text=": "
+								   VerticalAlignment="Center"/>
+
+						<!-- TextBox whose Text is two-way bound to the Text Styled Property
+                         of its template parent control -->
+						<TextBox Text="{Binding Text, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+								 VerticalAlignment="Center"
+								 Width="200"/>
+					</StackPanel>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</Styles>
