@@ -2,7 +2,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		Width="600"
 		Height="400"
-        x:Class="NP.PDD.Sample.MainWindow"
-        Title="NP.PDD.Sample">
+        x:Class="NP.PDD.MainApp.MainWindow"
+        Title="NP.PDD.MainApp">
 
 </Window>
