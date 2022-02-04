@@ -1,0 +1,8 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:visuals="clr-namespace:NP.Visuals;assembly=NP.Visuals"
+        Width="600"
+        Height="400"
+        x:Class="NP.PDD.MainApp.MainWindow"
+        Title="NP.PDD.MainApp">
+</Window>
